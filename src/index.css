@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+@layer base {
+  body {
+    @apply text-gray-900 dark:text-gray-100;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md transition-colors duration-200;
+  }
+}
+
+/* Custom Audio Player Styles */
+.rhap_container {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.rhap_main-controls-button {
+  @apply text-secondary hover:text-primary transition-colors !important;
+}
+
+.rhap_volume-button {
+  @apply text-secondary hover:text-primary transition-colors !important;
+}
+
+.rhap_volume-bar {
+  @apply bg-gray-200 !important;
+}
+
+.rhap_volume-indicator {
+  @apply bg-primary !important;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Modern Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-dark;
+}
+
+/* Button Hover Effects */
+.hover-effect {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.hover-effect:hover {
+  @apply transform -translate-y-1;
+}
+
+/* Glass Effect */
+.glass-effect {
+  @apply backdrop-blur-md bg-white/30 dark:bg-gray-800/30;
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

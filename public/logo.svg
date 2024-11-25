@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <circle cx="500" cy="500" r="450" fill="none" stroke="#FFB800" stroke-width="40"/>
+  <path d="M500 100 C 300 100, 100 300, 100 500 C 100 700, 300 900, 500 900" fill="none" stroke="#4B4B4B" stroke-width="40"/>
+  <path d="M500 100 C 700 100, 900 300, 900 500 C 900 700, 700 900, 500 900" fill="none" stroke="#4B4B4B" stroke-width="40"/>
+  <text x="150" y="500" font-family="Arial Black" font-size="200" fill="#FFB800">PRAISE</text>
+  <text x="550" y="500" font-family="Arial Black" font-size="200" fill="#4B4B4B">RADIO</text>
+  <text x="850" y="600" font-family="Arial Black" font-size="80" fill="#4B4B4B">.CO</text>
+  <path d="M900 200 C 920 180, 940 180, 960 200 M900 250 C 920 230, 940 230, 960 250 M900 300 C 920 280, 940 280, 960 300" fill="none" stroke="#4B4B4B" stroke-width="20"/>
+</svg>
